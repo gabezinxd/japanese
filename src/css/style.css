@@ -1,0 +1,81 @@
+body {
+	text-align: center;
+    align-content: center;
+    background-color: black;
+	color: white;
+    min-height: 100vh;
+}
+
+ /* * {
+    border: 1px solid red;
+}  */
+
+h1 {
+	font-size: 4rem;
+    font-family: "Beth Ellen";
+}
+
+h1 span {
+	color: #ff5563;
+}
+
+p {
+	font-family: 'Outfit';
+	font-size: 1.25rem;
+    margin-bottom: 4.5rem;
+}
+
+a {
+	color: white;
+	background-color: #ff5563;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: background-color 200ms;
+	font-family: 'Outfit';
+}
+
+a:hover {
+	background-color: #ca3c48;
+}
+
+#bg-image {
+    background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+@media (width < 40rem) {
+    html {
+        font-size: 70%;
+    }
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+}
+
+h1, p, a {
+    animation: appear 1s backwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+}
+
+p {
+    animation-delay: 0.8s;
+}
+
+a {
+    animation-delay: 1.6s;
+}
